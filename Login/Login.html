@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Biblioteca</title>
+    <style>
+           main{
+      
+      min-width: 250px;
+      max-width: 800px;
+      margin: auto;
+     }
+     
+     :root{
+      --cor0:#F1CF1E;
+      --cor1:#A8A7A7;
+      --cor2:#23A0D8;
+      --cor3:#E8F6FF;
+     }
+     body{
+      background-image: linear-gradient(to right,var(--cor2),var(--cor3));
+      background-image: url('../Imagens/Beira_center_2000.jpg');
+      background-attachment: fixed;
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+     }
+     table{
+        margin: auto;
+        background-image: linear-gradient(to right,var(--cor2),var(--cor3));
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.425);
+        min-width: 320px;
+      max-width: 800px;
+      
+      }
+      .facil{
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+      }
+      input{
+        border-radius: 100px;
+      }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="../Pagina principal/paginaprincipal.html" method="get">
+            <table>
+                <tr>
+                    <th colspan="2"><label for="Logo"><img src="../Imagens/Logo do munícipio da Beira.png" width="150" height="" alt=""></label></th>
+        
+                </tr>
+                <tr>
+                    <th colspan="2"><label for="Cadastro"><h3>Biblioteca</h3></label></th>
+                </tr>
+        
+                <tr>
+                    <td class="facil"><label for="Email">Email</label></td>
+                    <td><input type="email" name="Email" id="Email" required></td>
+                   </tr>
+                   <tr>
+                    <td class="facil"><label for="Senha">Senha</label></td>
+                    <td><input type="password" name="Senha" id="Senha" required></td>
+                  </tr>
+                  <tr>
+                    <td class="facil"><input type="submit" name="Cadastrar"  id="Cadastrar" value="Login"></td>
+        
+                  </tr>
+            </table>
+        </form>
+    </main>
+</body>
+</html>
