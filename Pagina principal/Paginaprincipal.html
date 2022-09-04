@@ -4,27 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
     <title>Biblioteca Municipal</title>
     <style>
-        body{
-        background-image: linear-gradient(to right,var(--cor2),var(--cor3));
+    *{
+        margin: 0px;
+        max-width: 1200px;
+        min-width: 320px;
+    }
+    
+    :root{
+      --cor0:#F1CF1E;
+      --cor1:#A8A7A7;
+      --cor2:#23A0D8;
+      --cor3:#E8F6FF;
+     } 
+       
+       
+    body{
+        background-image: url('../Imagens/Beira_center_2000.jpg');
      
-     background-attachment: fixed;
+     background-attachment: cover;
+     color: white;
+     background-position: center center;
+     background-repeat: repeat-y;
      
     } 
+    main{
+        background-color: white;
+        color: black;
+        width: 100%;
+        padding: 10px;
+    }
+    header{
+       background-image: linear-gradient(to right,var(--cor2), gray,var(--cor3));
+      padding: 10px;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+     
+
+    }
+    nav{
+        background-image: linear-gradient(to right,var(--cor2), gray,var(--cor3));
+      padding: 10px;
+      width: 100%;
+      height: 100%;
+      text-align: center;   
+
+    }
+    nav>a{
+        padding: 50px;
+        color: #E8F6FF;
+        text-decoration: none;
+    }
+    nav>a:hover{
+        border: 1px solid white;
+        padding: 5px;
+        transition-duration: 1s;
+        color:var(--cor0);
+        background-color: var(--cor2);
+        border-radius: 5px;
+       
+    }
     </style>
 </head>
 <body>
-    <header><h1>Bem-Vindo A Biblioteca Pública</h1></header>
+    <header><h1>Bem-Vindo A Biblioteca Municipal</h1></header>
     <nav>
-        <a href="">Livros de Acção</a>
-        <a href="">Livros de Romance</a>
+        <a href="#">Livros de Acção</a>
+        <a href="#">Livros de Romance</a>
        
     </nav>
     <main>
         <section id="">
             <article>
-                <p></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam explicabo, deserunt quae quas omnis vel harum inventore ea fuga quia iusto maiores laboriosam provident officia praesentium tempora ipsum totam quibusdam?
+                    
+                </p>
             </article>
         </section>
     </main>
