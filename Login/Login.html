@@ -45,7 +45,22 @@
       }
       input{
         border-radius: 100px;
+        padding: 7px;
       }
+      input:hover{
+        border-bottom: 2px solid var(--cor0);
+        transition: 1s;
+      }
+      #Cadastrar:hover{
+        box-shadow: 2px 2px 2px  black;
+        transition-duration: 1s;
+        background-image: linear-gradient(to right, var(--cor2),var(--cor3));
+      }
+      form input[type="text"]:hover{
+        color: #F1CF1E;
+        cursor: pointer;
+      }
+    
     </style>
 </head>
 <body>
@@ -61,16 +76,17 @@
                 </tr>
         
                 <tr>
-                    <td class="facil"><label for="Email">Email</label></td>
-                    <td><input type="email" name="Email" id="Email" required></td>
+                    <td class="facil"><label for="Email"></label></td>
+                    <td><input type="email" name="Email" id="Email" placeholder="Email" required></td>
                    </tr>
                    <tr>
-                    <td class="facil"><label for="Senha">Senha</label></td>
-                    <td><input type="password" name="Senha" id="Senha" required></td>
+                    <td class="facil"><label for="Senha"></label></td>
+                    <td><input type="password" name="Senha" id="Senha" placeholder="Senha" required>
+                    <button type="button" onclick="Showhide()"><img src="../Imagens/" alt=""></button></td>
                   </tr>
                   <tr>
                     <td class="facil"><input type="submit" name="Cadastrar"  id="Cadastrar" value="Login"></td>
-        
+                    
                   </tr>
             </table>
         </form>
