@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
     <title>Login Biblioteca</title>
     <style>
            main{
@@ -60,7 +61,7 @@
         color: #F1CF1E;
         cursor: pointer;
       }
-    
+     
     </style>
 </head>
 <body>
@@ -82,7 +83,7 @@
                    <tr>
                     <td class="facil"><label for="Senha"></label></td>
                     <td><input type="password" name="Senha" id="Senha" placeholder="Senha" required>
-                    <button type="button" onclick="Showhide()"><img src="../Imagens/" alt=""></button></td>
+                    <button type="button" onclick="Showhide()">Mostrar</button></td>
                   </tr>
                   <tr>
                     <td class="facil"><input type="submit" name="Cadastrar"  id="Cadastrar" value="Login"></td>
@@ -91,5 +92,20 @@
             </table>
         </form>
     </main>
+    <script>
+       function Showhide(){
+         var tipo= document.getElementById("Senha");
+         if(tipo.type == "password"){
+           tipo.type="text";
+
+
+         }else{
+          tipo.type="password";
+         }
+
+
+       }
+
+    </script>
 </body>
 </html>
