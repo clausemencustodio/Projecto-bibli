@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
     <title>Login Biblioteca</title>
     <style>
-      *{
+ *{
         margin: 0px;
       }
       
@@ -71,47 +71,47 @@
     </style>
 </head>
 <body>
-    <main>
-        <form action="../Pagina principal/paginaprincipal.html" method="get">
-            <table>
-                <tr>
-                    <th colspan="2"><label for="Logo"><img src="../Imagens/Logo do munícipio da Beira.png" width="150" height="" alt=""></label></th>
-        
-                </tr>
-                <tr>
-                    <th colspan="2"><label for="Cadastro"><h3>Biblioteca</h3></label></th>
-                </tr>
-        
-                <tr>
-                    <td class="facil"><label for="Email"></label></td>
-                    <td><input type="email" name="Email" id="Email" placeholder="Email" required></td>
-                   </tr>
-                   <tr>
-                    <td class="facil"><label for="Senha"></label></td>
-                    <td><input type="password" name="Senha" id="Senha" placeholder="Senha" required>
-                    <button type="button" onclick="Showhide()">Mostrar</button></td>
-                  </tr>
-                  <tr>
-                    <td class="facil"><input type="submit" name="Cadastrar"  id="Cadastrar" value="Login"></td>
-                    
-                  </tr>
-            </table>
-        </form>
-    </main>
-    <script>
-       function Showhide(){
-         var tipo= document.getElementById("Senha");
-         if(tipo.type == "password"){
-           tipo.type="text";
+  <main>
+    <form action="../Pagina principal/paginaprincipal.html" method="get">
+        <table>
+            <tr>
+                <th colspan="2"><label for="Logo"><img src="../Imagens/Logo do munícipio da Beira.png" width="150" height="" alt=""></label></th>
+    
+            </tr>
+            <tr>
+                <th colspan="2"><label for="Cadastro"><h3>Biblioteca</h3></label></th>
+            </tr>
+    
+            <tr>
+                <td class="facil"><label for="Email"></label></td>
+                <td><input type="email" name="Email" id="Email" placeholder="Email" required></td>
+               </tr>
+               <tr>
+                <td class="facil"><label for="Senha"></label></td>
+                <td><input type="password" name="Senha" id="Senha" placeholder="Senha" required>
+                <button type="button" onclick="Showhide()">Mostrar</button></td>
+              </tr>
+              <tr>
+                <td class="facil"><input type="submit" name="Cadastrar"  id="Cadastrar" value="Login"></td>
+                
+              </tr>
+        </table>
+    </form>
+</main>
+<script>
+   function Showhide(){
+     var tipo= document.getElementById("Senha");
+     if(tipo.type == "password"){
+       tipo.type="text";
 
 
-         }else{
-          tipo.type="password";
-         }
+     }else{
+      tipo.type="password";
+     }
 
 
-       }
+   }
 
-    </script>
+</script>
 </body>
 </html>
