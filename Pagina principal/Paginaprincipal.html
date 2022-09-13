@@ -9,7 +9,8 @@
     <style>
     *{
         margin: 0px;
-        max-width: 1200px;
+        padding: 0%;
+        max-width: 1250px;
         min-width: 320px;
       
     }
@@ -23,7 +24,7 @@
        
        
     body{
-        background-image: url('../Imagens/Beira_center_2000.jpg');
+        background-color: var(--cor2);
      
         background-attachment: fixed;
         color: white;
@@ -33,7 +34,7 @@
         
     } 
     main{
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.808);
         color: black;
         width: 100%;
        
@@ -62,6 +63,7 @@
         padding:20px;
         color: #E8F6FF;
         text-decoration: none;
+       
     }
     nav>a:hover{
         border: 1px solid white;
@@ -72,6 +74,9 @@
         background-color: var(--cor2);
         border-radius: 5px;
         box-shadow: 2px 2px 2px black;
+         border-color: var(--cor0);
+         overflow: hidden;
+         clear: none;
        
     }
    
@@ -87,78 +92,105 @@
         transition-duration: 1s;
         box-shadow: 2px 2px 2px black; 
     }
-    table{
-        margin-left: -100px;
-    }
+   
     section{
-        padding-top:5vh ;
-        padding-bottom: 5vh;
+        padding-top:10vh ;
+        padding-bottom: 10vh;
         line-height: 2em;
-        padding-left: 30px;
+    
         font-family: var(--font3);
-        font-size: 3.5vh;
+      
     }
     section.endereço{
-        background-size: cover;
-        background-attachment: fixed;
+        background-color: rgba(0, 0, 0, 0.842);
+    color:black;
+    box-shadow: inset 6px  6px 13px 0px rgba(0, 0, 0, 0.493);
+    background-size: cover;
+    background-attachment: fixed;
     }
-    section.endereço>p{
-        background-color: var(--cor1);
+    section.endereço>article{
+        background-image:linear-gradient(to right,var(--cor2), gray,var(--cor3));
         display: inline-block;
-        padding: 5px;
+      border-radius: 3px;
+        max-width: 800px;
+       min-width: 320px;
+       margin: auto;
+       
+      
 
     }
     section#nobody{
-        background-image: url('../Imagens/conselho.jpg');
+        background-image: url('../Imagens/Beira_center_2000.jpg'); 
+       
+       display: inline-block;
+        width: 100%;
+      
+       background-position: right center;
+       margin: 0%;
+    
+       
     }
-   
+    .img{
+       display: block;
+        margin-right: auto;
+    }
     footer{
         background-color: rgb(0, 0, 0);
         color: var(--cor3);
         text-align: center;
-        margin: auto;
-        width: 100%;
-        min-width: 320px;
-        max-width: 800px;
-        margin-top: 10px;
+       margin:auto ;
+    width: 100%;   
     }
-
     </style>
 </head>
 <body>
     <header>
-         <table>
-               <form action="../Index.html" method="get" >
-                <tr>
-                    <td><input type="submit" name="botão" id="botão" value="Cadastre-se" class="button1"></td></tr>     
-                
-                    </form>
-         </table>
-        <h1>Bem-Vindo a Biblioteca Municipal</h1>
+        <table>
+              <form action="../Index.html" method="get" >
+               <tr>
+                   <td><input type="submit" name="botão" id="botão" value="Cadastre-se" class="button1"></td></tr>     
+               
+                   </form>
+        </table>
+       <h1>Bem-Vindo a Biblioteca Municipal</h1>
+     
+   
+   </header>
+   <nav>
+       <a href="#">Livros de Acção</a>
+       <a href="#">Livros de Romance</a>
+       <a href="#">Contacte-nos</a>
+       <a href="#">Instagram</a>
       
-    
-    </header>
-    <nav>
-        <a href="#">Livros de Acção</a>
-        <a href="#">Livros de Romance</a>
-       
-    </nav>
-    <main>
-        <section class="ib" id="Info da biblioteca">
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam explicabo, deserunt quae quas omnis vel harum inventore ea fuga quia iusto maiores laboriosam provident officia praesentium tempora ipsum totam quibusdam?
-                    
-                </p>
-            </article>
-        </section>
-        <section class="endereço" id="nobody">
-            <article>
-                <p> </p>
-            </article>
+   </nav>
+   <main>
+       <section class="ib" id="Info da biblioteca">
+           <article>
+               <p>
+                   Bem vindo ao site da biblioteca municipal da cidade de Wing ridden 
+                   os livros disponiveis para requesitar são os <strong>livros de acção</strong> e <strong>livro de romance</strong>
+                   
+               </p>
+           </article>
+       </section>
+       <section class="endereço" id="nobody">
+           <article>
+               <p> 
+                   A Biblioteca publica ,localiza-se na baixa da cidade <br>
+                   ao pé do Banco de Moçambique e do Banco Standar Bank <br>
+                   com uma variedade grande de livros foi inaugurada no ano <br>
+                   de 1777 ,tendo como proprietario O Edil da cidade <br>
+                   <Exmo class="sr">Clausemen Custodio Nanro</Exmo> na sua inauguração reunio <br>
+                   varias figuras publicas como Mark exodus, Mr.bow, Ziqo <br>
+                   Nacionais, e internacionais como O Nga, Prodigio , <br>
+                   deezy, T-rex , e no seu primeiro dia de vendas fez sucesso <br>
+                   ultrapassando a marca de 100 livros requesitados <br>
+               </p>
+           </article>
 
-        </section>
-        
-    </main>
-    <footer>Site desenvolvido pelo Segundo Grupo</footer>
+       </section>
+               
+   </main>
+   <footer>Site desenvolvido pelo Segundo Grupo</footer>
 </body>
 </html>
