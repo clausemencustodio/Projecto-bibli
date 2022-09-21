@@ -69,13 +69,15 @@
         border: 1px solid white;
         padding: 5px;
         padding-top:0.5px ;
-        transition-duration: 1s;
-        color:var(--cor0);
+        transition-duration: 1s; 
         background-color: var(--cor2);
         border-radius: 5px;
         box-shadow: 2px 2px 2px black;
          border-color: var(--cor0);
      
+    }
+    nav>a:active{
+        color: var(--cor0);
     }
    
     input#botão{
@@ -106,13 +108,18 @@
     box-shadow: inset 6px  6px 13px 0px rgba(0, 0, 0, 0.493);
     background-size: cover;
     background-attachment: fixed;
+    
+    
     }
     section.endereço>article{
         background-image:linear-gradient(to right,var(--cor2), gray,var(--cor3));
         display: inline-block;
       border-radius: 3px;
-   
+      position: relative;
+      left:150px;
+      padding: 10px;
        margin: auto;
+       
        
       
 
@@ -156,7 +163,7 @@
    </header>
    <nav>
        <a href="#">Livros de Acção</a>
-       <a href="#">Livros de Romance</a>
+       <a href="../Romance/Romance.html">Livros de Romance</a>
        <a href="#">Contacte-nos</a>
        <a href="#">Instagram</a>
       
