@@ -1,154 +1,195 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <title>Biblioteca Municipal</title>
     <style>
-      *{
+    *{
         margin: 0px;
-
-      }
-       main{
+        padding: 0%;
+        max-width: 1350px;
+        min-width: 320px;
       
-     
-      max-width: 800px;
-      margin: auto;
-     }
-     
-     :root{
+    }
+    
+    :root{
       --cor0:#F1CF1E;
       --cor1:#A8A7A7;
       --cor2:#23A0D8;
       --cor3:#E8F6FF;
-     }
-     body{
-      background-image: linear-gradient(to right,var(--cor2),var(--cor3));
-      background-attachment: fixed;
-      
-     }
-     table{
-        margin: auto;
-        background-color: white;
-        padding: 5px;
-        border-radius: 15px;
-        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.363);
-        min-width: 320px;
-        max-width: 800px;
-        margin-top:50px;
+     } 
        
-  
-      
-      }
-      .facil{
-        text-align: left;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1rem;
-      }
-      input{
-        border-radius: 100px;
-        border: 1px 1px 1px #F1CF1E;
-        height: 20px;
        
-
+    body{
+        background-color: var(--cor2);
+     
+        background-attachment: fixed;
+        color: white;
+        background-position: center center;
+     
+        background-size: cover;
         
-      }
-      input:hover{
-        border-bottom: 2px solid var(--cor0);
-        transition: 1s;
-      }
+    } 
+    main{
+        background-color: rgba(255, 255, 255, 0.808);
+        color: black;
+        width: 100%;
+       
+        font-family: Arial, Helvetica, sans-serif;
+       
+    }
+    header{
+       background-color: var(--cor2);
+      padding-top: 20px;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      
      
 
-      #Identidade{
-        margin-left:-80px ;
-      } 
-      #Cadastrar:hover{
-        box-shadow: 2px 2px 2px  black;
-        transition-duration: 1s;
-      
-      } 
-      #Reset:hover{
-        box-shadow: 2px 2px 2px  black;
-        transition-duration: 1s;
+    }
+    nav{
+      background-image: linear-gradient(to right,var(--cor2), gray,var(--cor3));
+      padding-bottom: 10px;
+      width: 100%;
+      height: 100%;
+      text-align: center;   
+
+    }
+    nav>a{
+        padding:20px;
+        color: #E8F6FF;
+        text-decoration: none;
        
-      }
-      footer{
-        background-color: rgba(0, 0, 0, 0.068);
-        color: var(--cor3);
-       text-align: center;
-        margin: auto;
-        width: 100%;
-        min-width: 320px;
-        max-width: 800px;
-        margin-top: 10px;
-      }
+    }
+    nav>a:hover{
+        border: 1px solid white;
+        padding: 5px;
+        padding-top:0.5px ;
+        transition-duration: 1s; 
+        background-color: var(--cor2);
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px black;
+         border-color: var(--cor0);
+     
+    }
+    nav>a:active{
+        color: var(--cor0);
+    }
+   
+    input#botão{
+        border-radius: 100px;
+        background-color: var(--cor3);
+       
+        box-sizing: border-box;
+        
+        
+    }
+    input#botão:hover{
+        transition-duration: 1s;
+        box-shadow: 2px 2px 2px black; 
+        background-color:var(--cor2);
+    }
+   
+    section{
+        padding-top:10vh ;
+        padding-bottom: 10vh;
+        line-height: 2em;
+    
+        font-family: var(--font3);
       
+    }
+    section.endereço{
+        background-color: rgba(0, 0, 0, 0.842);
+    color:black;
+    box-shadow: inset 6px  6px 13px 0px rgba(0, 0, 0, 0.493);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+    }
+    section.endereço>article{
+        background-image:linear-gradient(to right,var(--cor2), gray,var(--cor3));
+        display: inline-block;
+      border-radius: 3px;
+      position: relative;
+      left:150px;
+      padding: 10px;
+       margin: auto;
+       
+       
+      
+
+    }
+    section#nobody{
+        background-image: url('../Imagens/Beira_center_2000.jpg'); 
+       
+       display: inline-block;
+        width: 100%;
+      
+       background-position: right center;
+       margin: 0%;
+    
+       
+    }
+    .img{
+       display: block;
+        margin-right: auto;
+    }
+    footer{
+        background-color: rgb(0, 0, 0);
+        color: var(--cor3);
+        text-align: center;
+       margin:auto ;
+        width: 100%;   
+    }
     </style>
 </head>
 <body>
-    <main>
-        <form action="Login/Login.html" method="get" autocomplete="on">
-            <table>
-              <tr>
-                <th colspan="2"><label for="Logo"><img src="Imagens/Logo do munícipio da Beira.png" width="150" height="" alt=""></label></th>
-              </tr>
-        
-              <tr>
-                    <th colspan="2"><label for="Cadastro"><h3>Cadastro da Biblioteca Municipal</h3></label></th>
-        
-              </tr>
-              <tr>
-                <td class="facil"><label for="Nome">Primeiro Nome:</label></td>
-                <td><input type="text" name="Nome" id="Nome"  required maxlength="77" size="25"></td>
-              </tr>
-        
-              <tr>
-                <td class="facil"><label for="Apelido">Apelido:</label></td>
-                <td><input type="text" name="Apelido" id="Apelido" required maxlength="77" size="25" ></td>
-              </tr>
-              <tr>
-                <td class="facil"><label for="Genero">Genéro:</label></td>
-                <td>
-                  <select name="Genero" id="Genero" required>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Feminino">Feminino</option>
-                  </select>
-                </td>
-              </tr>
+    <header>
+        <table>
+              <form action="cadastro/Cadasro.html" method="get" >
                <tr>
-                <td class="facil"><label for="Endereço">Endereço:</label></td>
-                <td><input type="text" name="Endereço" id="Endereço" required size="25"></td>
-               </tr>
-              <tr>
-              <td class="facil">  <label for="Contacto">Contacto(+258):</label></td>
-                 <td><input type="text" name="Contacto" id="Contacto" required maxlength="9" size="25"></td>
-              <tr>
-              <tr>
-                  <td class="facil"><label for="Identidade">B.I :</label></td>
-                  <td><input type="file" name="Identidade" id="Identidade" required></td>
-              </tr>
-              <tr>
-                <td class="facil"><label for="Idade">Idade:</label></td>
-                <td><input type="number" name="Idade" id="Idade" min="15" max="100" required ></td>
-              </tr>
-               <tr>
-                 <td class="facil"><label for="Email">Email:</label></td>
-                 <td><input type="email" name="Email" id="Email" required size="25"></td>
-               </tr>
-        
-               <tr>
-                 <td class="facil"><label for="Senha">Senha:</label></td>
-                 <td><input type="password" name="Senha" id="Senha" required size="25"></td>
-              </tr>
-              <tr>
-                 <td class="facil"><input type="submit" name="Cadastrar" id="Cadastrar" value="Cadastrar"></td>
-                 <td><input type="reset" name="Reset" id="Reset"></td>
-              </tr>
-            </table>
-        </form>
-      </main>
-      <footer><p>Desenvolvido Pelo Segundo Grupo</p></footer>
+                   <td><input type="submit" name="botão" id="botão" value="Cadastre-se" class="button1"></td></tr>     
+                    
+                   </form>
+        </table>
+       <h1>Bem-vindo a Biblioteca Municipal</h1>
+     
+   
+   </header>
+
+   <main>
+       <section class="ib" id="Info da biblioteca">
+           <article>
+               <p>
+                   Bem vindo ao site da biblioteca municipal da cidade de Wing ridden 
+                   os livros disponiveis para requesitar são os <strong>livros de acção</strong> e <strong>livro de romance</strong>
+                   
+               </p>
+           </article>
+       </section>
+       <section class="endereço" id="nobody">
+           <article>
+               <p> 
+                   A Biblioteca publica ,localiza-se na baixa da cidade <br>
+                   ao pé do Banco de Moçambique e do Banco Standar Bank <br>
+                   com uma variedade grande de livros foi inaugurada no ano <br>
+                   de 1777 ,tendo como proprietario O Edil da cidade <br>
+                   <Exmo class="sr">Clausemen Custodio Nanro</Exmo> na sua inauguração reunio <br>
+                   varias figuras publicas como Mark exodus, Mr.bow, Ziqo <br>
+                   Nacionais, e internacionais como O Nga, Prodigio , <br>
+                   deezy, T-rex , e no seu primeiro dia de vendas fez sucesso <br>
+                   ultrapassando a marca de 100 livros requesitados <br>
+               </p>
+           </article>
+
+       </section>
+               
+   </main>
+   <footer>Site desenvolvido pelo Segundo Grupo</footer>
 </body>
 </html>
