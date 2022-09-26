@@ -10,8 +10,7 @@
         margin: 0px;
         padding: 0px;
         max-width: 1350px;
-        min-width: 320px;
-      
+     
     }
     
     :root{
@@ -34,12 +33,29 @@
         padding: 10px;
     }
     div.Romance{
-        float: left;
+        float:left;
         padding: 5px;
+        width: 180px;
+        filter: blur(2px);
+      display: inline-block;
+     
+    }
+    div.Romance img{
+        width: 100%;
+    }
+    div.Romance:hover{
+        filter: blur(0px);
+        border: 1px solid;
+        transition-duration: 1s;
+        padding-left: 2px;
+        padding-right: 2px;
+
     }
     div.Name{
-       
+        padding: 10px;
+      text-align: center;
     }
+
 
     footer{
         background-color: rgb(0, 0, 0);
@@ -56,37 +72,39 @@
 </head>
 <body>
     <header>
-        <h1> Livros de Romance</h1>
+        <h1> Livros</h1>
     </header>
     <main>
         <div class="Romance">
-            <img src="" width="50" height="50" alt="">
-            <div class="Name">kbbih</div>
+            <img src="../livros/Capas de livros/a arte de fazer acontecer.PNG" width="150" height="120" alt="">
+            <div class="Name">A arte de fazer acontecer</div>
         </div>
         
         <div class="Romance">
-            <img src="" width="50" height="50" alt="">
-            <div class="Name">iouo</div>
+            <img src="../livros/Capas de livros/A sutil arte de ligar o foda-se.PNG" width="150" height="120" alt="">
+            <div class="Name">A sutil arte de ligar o foda-se</div>
+            <div class="Genero"></div>
         </div>
         <div class="Romance">
-            <img src="" width="50" height="50" alt="">
-            <div class="Name">jeir</div>
+            <img src="../livros/Capas de livros/A árvore do dinheiro.PNG" width="150" height="120" alt="">
+            <div class="Name">A árvore do dinheiro</div>
         </div>
         <div class="Romance">
-            <img src="" width="50" height="50" alt="">
-            <div class="Name">eirie</div>
+            <img src="../livros/Capas de livros/100dicas para falar em publico.PNG" width="150" height="120" alt="">
+            <div class="Name">100 poderosas dicas para falar em publico</div>
         </div>
         <div class="Romance">
             
-            <img src="" width="50" height="50" alt="">
-            <div class="Name">otrp</div>
+            <img src="../livros/Capas de livros/Congo.PNG" width="150" height="120" alt="">
+            <div class="Name">Congo</div>
         </div>
         <div class="Romance">
-            <img src="" width="50" height="50" alt="">
-            <div class="Name">pftrt</div>
+            <img src="../livros/Capas de livros/Uma vida.PNG" width="150" height="120" alt="">
+            <div class="Name">Uma vida</div>
         </div>
+        <div><footer></footer></div>
     </main>
-      
+   
    
 
 </body>
