@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
     <title>Document</title>
     <style>
       *{
@@ -66,7 +66,7 @@
         margin-left:-80px ;
       } 
       input:focus{
-        background-color: var(--cor0);
+        background-color: var(--cor3);
       }
       #Cadastrar:hover{
         box-shadow: 2px 2px 2px  black;
@@ -93,7 +93,7 @@
 </head>
 <body>
     <main>
-        <form action="../Login/Login.html" method="post" autocomplete="on">
+        <form id="frmAluno" action="../Login/Login.html" method="post" autocomplete="on">
             <table>
               <tr>
                 <th colspan="2"><label for="Logo"><img src="../Imagens/Logo do munícipio da Beira.png" width="150" height="" alt=""></label></th>
@@ -147,7 +147,7 @@
                  <td><input type="password" name="Senha" id="Senha" required size="25"></td>
               </tr>
               <tr>
-                 <td class="facil"><input type="submit" name="Cadastrar" id="Cadastrar" value="Cadastrar"></td>
+                 <td class="facil"><input type="submit" name="Cadastrar" id="btnSalvar" value="Cadastrar"></td>
                  <td><input type="reset" name="Reset" id="Reset"></td>
               </tr>
             </table>
