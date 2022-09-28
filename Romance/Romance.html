@@ -10,8 +10,11 @@
         margin: 0px;
         padding: 0px;
         max-width: 1350px;
-        min-width: 100px;
+        min-width: 200px;
      
+    }
+    body:hover{
+        background-color:var(--cor3);
     }
     
     :root{
@@ -21,7 +24,7 @@
       --cor3:#E8F6FF;
     } 
     header{
-        background-image: linear-gradient(to right,var(--cor2),var(--cor3));
+        background-color: var(--cor2);
         padding-top: 20px;
         width: 100%;
         height: 100%;
@@ -30,15 +33,14 @@
     h1{
         text-align: center;
     }
-    main{
-        padding: px;
-    }
+   
     div.Romance{
-        float:left;
-       padding: 2px;
-        width: 180px;
-        filter: blur(2px);
+        float:;
+       padding: 1px;
+        width: 170px;
+        filter: blur(0.9px);
       display: inline-block;
+
      
     }
     div.Romance img{
@@ -46,8 +48,9 @@
     }
     div.Romance:hover{
         filter: blur(0px);
-        border: 1px solid;
+      
         transition-duration: 0.5s;
+        box-shadow: 2px 2px 2px 2px black;
     }
     div.Name{
         display: inline;
@@ -57,7 +60,20 @@
      
     }
     footer{
-        display: contents;
+        display: block;
+       background-color: black;
+       color: white;
+       text-align: center;
+    }
+    input{
+        padding: 5px;
+        border-radius: 5px;
+        display: inline-block;
+        margin: auto;
+
+    }
+    input:focus{
+        background-color: var(--cor3);
     }
 
    
@@ -70,6 +86,9 @@
         <h1> Livros</h1>
     </header>
     <main>
+        <form action="" method="get">
+            <input type="search" name="pesquisa" id="pesquisa" placeholder="Titulo, Gênero, Autor">
+        </form>
         <section>
             <div class="Romance">
                 <a href="../Arte de fazer acontecer/a arte.html"><img src="../livros/Capas de livros/a arte de fazer acontecer.PNG" width="100" height="100" alt=""></a>
@@ -87,7 +106,7 @@
             </div>
             <div class="Romance">
                 <a href="../100 dicas/100dicas.html"><img src="../livros/Capas de livros/100dicas para falar em publico.PNG" width="100" height="100" alt=""></a>
-                <div class="Name">100 poderosas dicas para falar em publico</div>
+                <div class="Name">100 dicas</div>
             </div>
             <div class="Romance">
                 <a href="../Congo/Congo.html"><img src="../livros/Capas de livros/Congo.PNG" width="100" height="100" alt=""></a>
@@ -97,12 +116,51 @@
                 <a href="../"><img src="../livros/Capas de livros/Uma vida.PNG" width="100" height="100" alt=""></a>
                 <div class="Name">Uma vida</div>
             </div>
+            <div class="Romance">
+                <a href="../"><img src="../livros/Ficção/A Guerra dos Mundos.PNG" width="100" height="100" alt=""></a>
+                <div class="Name">Guerra dos mundos</div>
+            </div>
+            <div class="Romance">
+                <a href="../"><img src="../livros/Ficção/A ilha do Dr.Moreau.PNG" width="100" height="100" alt=""></a>
+                <div class="Name">A ilha do Dr.Moreua </div>
+            </div>
+            <div class="Romance">
+                <a href="../"><img src="../livros/Ficção/A máquina do tempo.PNG" width="100" height="100" alt=""></a>
+                <div class="Name">A máquina do tempo</div>
+            </div>
+            <div class="Romance">
+                <a href="../"><img src="../livros/Ficção/O Alimento dos Deuses.PNG" width="100" height="100" alt=""></a>
+                <div class="Name">O alimento dos Deuses</div>
+            </div>
+            <div class="Romance">
+                <a href="../"><img src="../livros/Ficção/O Homem Invisivel.PNG" width="100" height="100" alt=""></a>
+                <div class="Name">O Homem Invisivel</div>
+            </div>
+            <div class="Romance">
+                <a href="../"><img src="../livros/Ficção/Uma princesa de marte.PNG" width="100" height="100" alt=""></a>
+                <div class="Name">Uma princesa de marte</div>
+            </div>
+            <div class="Romance">
+                <a href="../"><img src="../livros/Policiais/O detetive.PNG" width="100" height="100" alt=""></a>
+                <div class="Name">Detetives</div>
+            </div>
+            <div class="Romance">
+                <a href="../"><img src="../livros/Policiais/O Assassinato de Roger ackroyd aghata.PNG" width="100" height="100" alt=""></a>
+                <div class="Name">Assassino de Roger</div>
+            </div>
+            <div class="Romance">
+                <a href="../"><img src="../livros/Policiais/O cão dos baskervilles.PNG" width="100" height="100" alt=""></a>
+                <div class="Name">O cão dos baskervilles</div>
+            </div>
+            <div class="Romance">
+                <a href="../"><img src="../livros/Policiais/O signo dos quarto autor.PNG" width="100" height="100" alt=""></a>
+                <div class="Name">O signo dos quartos</div>
+            </div>
 
         </section>
-        
+     
     </main>
-   
-
+<footer>Desenvolvido pelo segundo grupo</footer>
 
 </body>
 </html>
