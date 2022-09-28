@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
     <title>Login Biblioteca</title>
     <style>
- *{
+      *{
         margin: 0px;
       }
       
@@ -60,19 +60,18 @@
       }
       #Cadastrar:hover{
         box-shadow: 2px 2px 2px  black;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
         background-image: linear-gradient(to right, var(--cor2),var(--cor3));
       }
-      form input[type="text"]:hover{
-        color: #F1CF1E;
-        cursor: pointer;
+      input:focus{
+        background-color: var(--cor3);
       }
      
     </style>
 </head>
 <body>
   <main>
-    <form action="../Pagina principal.html" method="get">
+    <form action="../Pagina principal.html" method="post">
         <table>
             <tr>
                 <th colspan="2"><label for="Logo"><img src="../Imagens/Logo do munícipio da Beira.png" width="150" height="" alt=""></label></th>
