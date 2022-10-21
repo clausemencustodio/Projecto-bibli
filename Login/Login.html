@@ -50,13 +50,16 @@
         font-size: 1em;
       }
       input{
-        border-radius: 100px;
+        border-radius: 3px;
         padding: 7px;
        
       }
       input:hover{
         border-bottom: 2px solid var(--cor0);
         transition: 1s;
+      }
+      input:focus{
+        background-color: var(--cor3);
       }
       #Cadastrar:hover{
         box-shadow: 2px 2px 2px  black;
@@ -77,9 +80,7 @@
                 <th colspan="2"><label for="Logo"><img src="../Imagens/Logo do munícipio da Beira.png" width="150" height="" alt=""></label></th>
     
             </tr>
-            <tr>
-                <th colspan="2"><label for="Cadastro"><h3>Biblioteca</h3></label></th>
-            </tr>
+
     
             <tr>
                 <td class="facil"><label for="Email"></label></td>
@@ -93,6 +94,10 @@
               <tr>
                 <td class="facil"><input type="submit" name="Cadastrar"  id="Cadastrar" value="Login"></td>
                 
+              </tr>
+              <tr>
+                <td></td>
+                <td>Ainda não tem conta? <a href="../cadastro/Cadasro.html">Cadastre-se</a></td>
               </tr>
         </table>
     </form>
