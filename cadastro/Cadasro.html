@@ -79,14 +79,15 @@
        
       }
       footer{
+        position: relative;
+        top: 90px;
         background-color: rgba(0, 0, 0, 0.068);
         color: var(--cor3);
        text-align: center;
         margin: auto;
         width: 100%;
-        min-width: 320px;
-        max-width: 800px;
-        margin-top: 10px;
+      
+        margin-top: 12px;
       }
       
     </style>
@@ -94,7 +95,7 @@
 <body>
     <main>
         <form id="frmAluno" action="../Login/Login.html" method="post" autocomplete="on">
-            <table>
+            <table >
               <tr>
                 <th colspan="2"><label for="Logo"><img src="../Imagens/Logo do munícipio da Beira.png" width="150" height="" alt=""></label></th>
               </tr>
@@ -105,16 +106,16 @@
               </tr>
               <tr>
               
-                <td><input type="text" name="Nome" id="Nome"  required maxlength="77" size="25" placeholder="Primeiro Nome"></td>
+                <td colspan="2"><input type="text" name="Nome" id="Nome"  required maxlength="77" size="38" placeholder="Primeiro Nome"></td>
               </tr>
         
               <tr>
              
-                <td><input type="text" name="Apelido" id="Apelido" required maxlength="77" size="25" placeholder="Apelido"></td>
+                <td colspan="2"><input type="text" name="Apelido" id="Apelido" required maxlength="77" size="38" placeholder="Apelido"></td>
               </tr>
               <tr>
                
-                <td>
+                <td colspan="2">
                   <select name="Genero" id="Genero" required>
                     <option value="Masculino">Masculino</option>
                     <option value="Feminino">Feminino</option>
@@ -123,27 +124,27 @@
               </tr>
                <tr>
             
-                <td><input type="text" name="Endereço" id="Endereço" required size="25" placeholder="Endereço"></td>
+                <td colspan="2"><input type="text" name="Endereço" id="Endereço" required size="38" placeholder="Endereço"></td>
                </tr>
               <tr>
               
-                 <td><input type="text" name="Contacto" id="Contacto" required maxlength="9" size="25" placeholder="Contacto(+258):"></td>
+                 <td colspan="2"><input type="text" name="Contacto" id="Contacto" required maxlength="9" size="38" placeholder="Contacto(+258):"></td>
               <tr>
             
               <tr>
                 
-                <td><input type="number" name="Idade" id="Idade" min="15" max="100" required placeholder="Idade:"></td>
+                <td colspan="2"><input type="number" name="Idade" id="Idade" min="15" max="100" required placeholder="Idade:" ></td>
               </tr>
                <tr>
                
-                 <td><input type="email" name="Email" id="Email" required size="25" placeholder="Email"></td>
+                 <td colspan="2"><input type="email" name="Email" id="Email" required size="38" placeholder="Email"></td>
                </tr>
                <tr>
-                 <td><input type="password" name="Senha" id="Senha" required size="25" placeholder="Senha:"></td>
+                 <td colspan="2"><input type="password" name="Senha" id="Senha" required size="38" placeholder="Senha:"></td>
               </tr>
               <tr>
                  <td class="facil"><input type="submit" name="Cadastrar" id="btnSalvar" value="Cadastrar"></td>
-                 <td><input type="reset" name="Reset" id="Reset"></td>
+                 <td><input type="reset" name="Reset" id="Reset" value="Repor"></td>
               </tr>
               <tr>
                 <td>Se já se cadastro,faça <a href="../Login/Login.html">Login</a></td>
