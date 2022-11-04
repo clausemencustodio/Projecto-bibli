@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livros de Romance</title>
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
     <style>
         @font-face {
             font-family: 'myfirst';
@@ -24,6 +25,8 @@
 
         body:hover {
             background-color: var(--cor3);
+           
+           
         }
 
         :root {
@@ -38,11 +41,14 @@
             padding-top: 20px;
             width: 100%;
             height: 100%;
+            
         }
 
         h1 {
             text-align: center;
             font-family: 'myfirst';
+            max-width: 1350px;
+            min-width: 200px;
 
 
         }
@@ -91,23 +97,38 @@
         }
         .Romance{
             display: flex;
-            border: 1px solid black;
+            border: 1px solid rgba(0, 0, 0, 0.199);
            margin-bottom: 10px;
+           box-sizing: border-box;
+           max-width: 1350px;
+           min-width: 100px;
             
 
+        }
+        .long{
+            max-width: 1350px;
+            min-width: 200px;
         }
         .Romance:hover{
             background-color: rgba(128, 128, 128, 0.336);
             box-shadow: 2px 2px 2px black;
+            transition-duration: 0.5s;
             
         }
         
         ul{
             list-style-type: none;
-            margin-left:50px
+            padding-left:5px;
+            box-sizing: border-box;
         }
+      
         section{
             padding: 15px;
+            max-width: 1350px;
+            min-width: 200px;
+        }
+        li{
+            box-sizing: border-box;
         }
         
         
@@ -183,33 +204,34 @@
                 <a href="../Arte de fazer acontecer/a arte.html"><img
                         src="../livros/Capas de livros/a arte de fazer acontecer.PNG" 
                         class="foto"  alt=""></a>
-                        <ul>
-                            <li><strong>Nome</strong>: A arte de fazer acontecer</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-
-                        </ul>
+                        
+                            <ul>
+                                <li><strong>Titulo</strong>: A arte de fazer acontecer</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                      
                 <div class="Name"></div>
+                
             </div>
 
             <div class="Romance">
                 <a href="../Sutil/Sutil.html"><img src="../livros/Capas de livros/A sutil arte de ligar o foda-se.PNG"
                     class="foto" alt=""></a>
                         <ul>
-                            <li><strong>Nome:</strong> A sutil arte de ligar o foda-se</li>
+                            <li><strong>Titulo:</strong> A sutil arte de ligar o foda-se</li>
                             <li></li>
                             <li></li>
                             <li></li>
                         </ul>
-                <div class="Name"></div>
-                <div class="Genero"></div>
+               
             </div>
             <div class="Romance">
                 <a href=""><img src="../livros/Capas de livros/A árvore do dinheiro.PNG"
                          class="foto" alt=""></a>
                          <ul>
-                            <li><strong>Nome:</strong> A árvore do dinheiro</li>
+                            <li><strong>Titulo:</strong> A árvore do dinheiro</li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -221,7 +243,7 @@
                     class="foto"  src="../livros/Capas de livros/100dicas para falar em publico.PNG"
                          alt=""></a>
                          <ul>
-                            <li><strong>Nome:</strong>100 dicas</li>
+                            <li><strong>Titulo:</strong>100 dicas</li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -232,7 +254,7 @@
                 <a href="../Congo/Congo.html"><img src="../livros/Capas de livros/Congo.PNG"
                     class="foto"  alt=""></a>
                          <ul>
-                            <li><strong>Nome:</strong> Congo</li>
+                            <li><strong>Titulo:</strong> Congo</li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -243,7 +265,7 @@
                 <a href="../"><img src="../livros/Capas de livros/Uma vida.PNG" 
                     class="foto"   alt=""></a>
                         <ul>
-                            <li><strong>Nome:</strong>Uma vida</li>
+                            <li><strong>Titulo:</strong>Uma vida</li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -254,18 +276,18 @@
                 <a href="../"><img src="../livros/Ficção/A Guerra dos Mundos.PNG" 
                     class="foto"   alt=""></a>
                         <ul>
-                            <li><strong>Nome:</strong>Guerra dos mundos</li>
+                            <li><strong>Titulo:</strong>Guerra dos mundos</li>
                             <li></li>
                             <li></li>
                             <li></li>
                         </ul>
-                <div class="Name"></div>
+               
             </div>
             <div class="Romance">
                 <a href="../"><img src="../livros/Ficção/A ilha do Dr.Moreau.PNG" 
                     class="foto"  alt=""></a>
                         <ul>
-                            <li><strong>Nome:</strong>A ilha do Dr.Moreua </li>
+                            <li><strong>Titulo:</strong>A ilha do Dr.Moreua </li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -276,7 +298,7 @@
                 <a href="../"><img src="../livros/Ficção/A máquina do tempo.PNG" 
                     class="foto"    alt=""></a>
                         <ul>
-                            <li><strong>Nome:</strong>A máquina do tempo</li>
+                            <li><strong>Titulo:</strong>A máquina do tempo</li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -287,7 +309,7 @@
                 <a href="../"><img src="../livros/Ficção/O Alimento dos Deuses.PNG"
                     class="foto"    alt=""></a>
                         <ul>
-                            <li><strong>Nome:</strong>O alimento dos Deuses</li>
+                            <li><strong>Titulo:</strong>O alimento dos Deuses</li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -298,7 +320,7 @@
                 <a href="../"><img src="../livros/Ficção/O Homem Invisivel.PNG" 
                     class="foto"   alt=""></a>
                         <ul>
-                            <li><strong>Nome:</strong>O Homem Invisivel</li>
+                            <li><strong>Titulo:</strong>O Homem Invisivel</li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -309,7 +331,7 @@
                 <a href="../"><img src="../livros/Ficção/Uma princesa de marte.PNG" 
                     class="foto"   alt=""></a>
                         <ul>
-                            <li><strong>Nome:</strong>Uma princesa de marte</li>
+                            <li><strong>Titulo:</strong>Uma princesa de marte</li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -320,7 +342,7 @@
                 <a href="../"><img src="../livros/Policiais/O detetive.PNG" 
                     class="foto"    alt=""></a>
                         <ul>
-                            <li><strong>Nome:</strong>Detetives</li>
+                            <li><strong>Titulo:</strong>Detetives</li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -331,7 +353,7 @@
                 <a href="../"><img src="../livros/Policiais/O Assassinato de Roger ackroyd aghata.PNG"
                     class="foto"  alt=""></a>
                      <ul>
-                        <li><strong>Nome:</strong>Assassino de Roger</li>
+                        <li><strong>Titulo:</strong>Assassino de Roger</li>
                         <li></li>
                         <li></li>
                         <li></li>
@@ -342,7 +364,7 @@
                 <a href="../"><img src="../livros/Policiais/O cão dos baskervilles.PNG"
                     class="foto"  alt=""></a>
                          <ul>
-                            <li><strong>Nome:</strong>O cão dos baskervilles</li>
+                            <li><strong>Titulo:</strong>O cão dos baskervilles</li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -353,7 +375,7 @@
                 <a href="../"><img src="../livros/Policiais/O signo dos quarto autor.PNG"
                     class="foto"  alt=""></a>
                          <ul>
-                            <li><strong>Nome:</strong>O signo dos quartos</li>
+                            <li><strong>Titulo:</strong>O signo dos quartos</li>
                             <li></li>
                             <li></li>
                             <li></li>
