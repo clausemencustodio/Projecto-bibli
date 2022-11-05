@@ -10,8 +10,7 @@
     *{
         margin: 0px;
         padding: 0%;
-        max-width: 1350px;
-        min-width: 320px;
+      
       
     }
     
@@ -21,6 +20,33 @@
       --cor2:#23A0D8;
       --cor3:#E8F6FF;
      } 
+    #fora{
+        position: relative;
+        background-color: #A8A7A7;
+     
+        display: inline-block;
+       left: 10px;
+        top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        
+    }
+    #dentro{
+        text-align: center;
+        
+        
+        
+    }
+    a{
+        color: white;
+    }
+    #fora:hover{
+        background-color: var(--cor2);
+        border: 1px solid #F1CF1E;
+        transition-duration: 0.5s;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.192);
+    }
        
        
     body{
@@ -31,6 +57,8 @@
         background-position: center center;
      
         background-size: cover;
+        max-width: 1350px;
+        min-width: 320px;
         
     } 
     main{
@@ -39,15 +67,19 @@
         width: 100%;
        
         font-family: Arial, Helvetica, sans-serif;
+        max-width: 1350px;
+        min-width: 320px;
        
     }
+  
     header{
        background-color: var(--cor2);
       padding-top: 20px;
       width: 100%;
       height: 100%;
       text-align: center;
-      
+      max-width: 1350px;
+        min-width: 320px;
      
 
     }
@@ -56,7 +88,9 @@
       padding-bottom: 10px;
       width: 100%;
       height: 100%;
-      text-align: center;   
+      text-align: center; 
+      max-width: 1350px;
+        min-width: 320px;  
 
     }
     nav>a{
@@ -100,6 +134,8 @@
         line-height: 2em;
     
         font-family: var(--font3);
+        max-width: 1350px;
+        min-width: 320px;
       
     }
     section.endereço{
@@ -132,6 +168,8 @@
     .img{
        display: block;
         margin-right: auto;
+        max-width: 1350px;
+        min-width: 320px;
     }
     footer{
         background-color: var(--cor3);
@@ -139,19 +177,20 @@
         text-align: center;
        margin:auto ;
         width: 100%;   
+        max-width: 1350px;
+        min-width: 320px;
     }
     </style>
 </head>
 <body>
+    <a href="Login/Login.html">
+        <div id="fora">
+            <div id="dentro">Login</div>
+        </div>
+    </a>
+    
     <header>
-        <table>
-              <form action="Login/Login.html" method="get">
-                <tr>
-                    <td><input type="submit" name="botão" id="botão" value="Login"></td>
-                </tr>
-              </form>
-
-        </table>
+        
        <h1>Bem-vindo a Biblioteca Municipal</h1>
    </header>
    
